@@ -1,0 +1,6 @@
+name: HollyService-Wallet
+version: '1.0'
+main: dev.grzybalson.WalletPlugin
+api-version: '1.20'
+author: grzybalson
+softdepend: [PlaceholderAPI, LuckPerms]
