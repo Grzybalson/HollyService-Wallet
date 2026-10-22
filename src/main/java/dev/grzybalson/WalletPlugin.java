@@ -37,6 +37,7 @@ public class WalletPlugin extends JavaPlugin {
         logger = new WalletLogger(this);
         try {
             Files.createDirectories(getDataFolder().toPath());
+            if (!new File(getDataFolder(), "wallet.yml").exists()) saveResource("wallet.yml", false);
             settings = ConfigLoader.load(WalletConfig.class, new File(getDataFolder(), "wallet.yml"));
             ConfigLoader.validate(settings);
             DatabaseConfig database = ConfigLoader.load(DatabaseConfig.class, new File(getDataFolder(), "database.yml"));

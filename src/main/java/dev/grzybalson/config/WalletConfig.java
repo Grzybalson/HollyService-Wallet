@@ -51,8 +51,8 @@ public class WalletConfig extends OkaeriConfig {
     public static class Product extends OkaeriConfig {
         public String price = "10.00";
         public ItemConfig item = new ItemConfig(22, "LEATHER_HELMET", "&fʀᴀɴɢᴀ &a&lᴠɪᴘ",
-            "&8ɪɴꜰᴏʀᴍᴀᴄᴊᴇ ᴏ ᴘʀᴏᴅᴜᴋᴄɪᴇ", "&f", "&8⁎  ᴋᴏꜱᴢᴛ: &a%holly_cost% ᴡᴘʟɴ",
-            "&8⁎  ᴄᴢᴀꜱ ᴛʀᴡᴀɴɪᴀ: &e30dni", "&f", "&8⁎ ᴡɪᴇᴄᴇᴊ ɪɴꜰᴏʀᴍᴀᴄᴊɪ", "&8⁎ ᴘᴏᴅ: &6/ʀᴀɴɢɪ",
+            "&8ɪɴꜰᴏʀᴍᴀᴄᴊᴇ ᴏ ᴘʀᴏᴅᴜᴋᴄɪᴇ", "&f", "&8⁎  &fᴋᴏꜱᴢᴛ: &a%holly_cost% ᴡᴘʟɴ",
+            "&8⁎  &fᴄᴢᴀꜱ ᴛʀᴡᴀɴɪᴀ: &e30dni", "&f", "&8⁎ &fᴡɪᴇᴄᴇᴊ ɪɴꜰᴏʀᴍᴀᴄᴊɪ", "&8⁎ &fᴘᴏᴅ: &6/ʀᴀɴɢɪ",
             "&f", "&a&nᴋʟɪᴋɴɪᴊ, ᴀʙʏ ᴡʏʙʀᴀᴄ", "&f");
         public List<String> commands = new ArrayList<>(Collections.singletonList("lp user %player% parent addtemp vip 30d"));
     }
@@ -78,7 +78,7 @@ public class WalletConfig extends OkaeriConfig {
 
     public static class Broadcast extends OkaeriConfig {
         public String title = "&#FFF800&lᴅ&#FDF71C&lᴏ&#FBF638&lʟ&#FAF554&lᴀ&#F8F470&lᴅ&#F6F38C&lᴏ&#F8F470&lᴡ&#FAF554&lᴀ&#FBF638&lɴ&#FDF71C&lɪ&#FFF800&lᴇ";
-        public String subtitle = "&fɢʀᴀᴄᴢ %player% ᴅᴏʟᴀᴅᴏᴡᴀʟ %iloscwpln% &e☺&#FFCF00&lɢ&#FFE400&lᴢ&#FFF800&l!&#FFE400&l! &e☺";
+        public String subtitle = "&fɢʀᴀᴄᴢ %player% ᴅᴏʟᴀᴅᴏᴡᴀʟ %iloscwpln% &e☺ &#FFCF00&lɢ&#FFE400&lᴢ&#FFF800&l!&#FFE400&l! &e☺";
         public int fadeIn = 10;
         public int stay = 70;
         public int fadeOut = 20;
