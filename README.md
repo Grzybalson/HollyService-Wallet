@@ -8,33 +8,27 @@ Portfel WPLN dla serwerów Minecraft 1.20.1+. Kategorie i produkty w GUI, codzie
 2. Umieść plik w katalogu `plugins` i uruchom ponownie serwer.
 3. Dostosuj `wallet.yml` i `database.yml` w katalogu `plugins/HollyService-Wallet`.
 
-PlaceholderAPI jest potrzebne do używania placeholdera w innych pluginach. Domyślny produkt VIP korzysta z LuckPerms; komendy nadawania produktów można zmienić.
-
 ## Komendy
 
-- `/portfel` — otwiera portfel.
-- `/aportfel add <nick> <ilosc>` — dodaje WPLN.
-- `/aportfel set <nick> <ilosc>` — ustawia saldo.
-- `/aportfel remove <nick> <ilosc>` — odejmuje WPLN.
-- `/aportfel doladowanie <nick> <ilosc>` — dodaje WPLN, a przy dodatniej kwocie wyświetla wszystkim graczom title i odtwarza dźwięk.
-- `/aportfel logs <nick>` — otwiera historię operacji gracza.
-- `/aportfel reload` — przeładowuje `wallet.yml`.
-
-Komendy obsługują znanych graczy offline oraz podpowiadanie nicków. Kwoty mogą mieć maksymalnie dwa miejsca po przecinku, np. `0`, `-1`, `0.01` lub `0,01`. Ujemna kwota odwraca działanie `add` i `remove`; `set` pozwala ustawić ujemne saldo.
+- `/portfel`
+- `/aportfel add <nick> <ilosc>`
+- `/aportfel set <nick> <ilosc>`
+- `/aportfel remove <nick> <ilosc>`
+- `/aportfel doladowanie <nick> <ilosc>`
+- `/aportfel logs <nick>`
+- `/aportfel reload`
 
 ## Uprawnienia
 
-- `holly.cmd.wallet.use` — `/portfel`; domyślnie dostępne dla graczy.
-- `holly.cmd.wallet.add` — `/aportfel add`.
-- `holly.cmd.wallet.set` — `/aportfel set`.
-- `holly.cmd.wallet.remove` — `/aportfel remove`.
-- `holly.cmd.wallet.doladowanie` — `/aportfel doladowanie`.
-- `holly.cmd.wallet.logs` — `/aportfel logs`.
-- `holly.cmd.wallet.reload` — `/aportfel reload`.
-- `holly.cmd.wallet.admin` — wszystkie komendy administratora.
-- `holly.cmd.wallet.*` — wszystkie uprawnienia portfela.
-
-Uprawnienia administratora są domyślnie dostępne dla operatorów. Historia operacji i portfel otwierają GUI, więc wymagają wykonania komendy przez gracza.
+- `holly.cmd.wallet.use`
+- `holly.cmd.wallet.add`
+- `holly.cmd.wallet.set`
+- `holly.cmd.wallet.remove`
+- `holly.cmd.wallet.doladowanie`
+- `holly.cmd.wallet.logs`
+- `holly.cmd.wallet.reload`
+- `holly.cmd.wallet.admin`
+- `holly.cmd.wallet.*`
 
 ## PlaceholderAPI
 
@@ -48,7 +42,7 @@ W konfiguracji menu dostępne są również znaczniki lokalne:
 - `%reward_min%`, `%reward_max%` — zakres codziennej nagrody.
 - `%player%` — nick gracza w obsługujących go komunikatach i komendach produktu.
 - `%uuid%` — UUID gracza w komendach produktu.
-- `%iloscwpln%` — kwota w powiadomieniu o doładowaniu.
+- `%topup_amount%` — kwota w powiadomieniu o doładowaniu.
 
 ## Konfiguracja
 

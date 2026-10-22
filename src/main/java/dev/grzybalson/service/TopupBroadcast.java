@@ -14,7 +14,7 @@ public final class TopupBroadcast {
     public TopupBroadcast(Supplier<WalletConfig> config, WalletLogger logger) { this.config = config; this.logger = logger; }
     public void announce(String name, long amount) {
         WalletConfig.Broadcast settings = config.get().topup;
-        Map<String, String> values = PlaceholderUtil.values("player", name, "iloscwpln", MoneyUtil.format(amount));
+        Map<String, String> values = PlaceholderUtil.values("player", name, "topup_amount", MoneyUtil.format(amount));
         for (Player player : Bukkit.getOnlinePlayers()) {
             try {
                 player.sendTitle(ColorUtil.color(PlaceholderUtil.replace(settings.title, values)), ColorUtil.color(PlaceholderUtil.replace(settings.subtitle, values)), settings.fadeIn, settings.stay, settings.fadeOut);

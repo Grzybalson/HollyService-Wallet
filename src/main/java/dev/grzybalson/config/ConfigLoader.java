@@ -18,7 +18,8 @@ public final class ConfigLoader {
         try {
             if (Files.exists(file.toPath())) {
                 String content = new String(Files.readAllBytes(file.toPath()), StandardCharsets.UTF_8);
-                if (type == WalletConfig.class) content = content.replace("%holly_playerwpln%", "%hollywallet_wpln%");
+                if (type == WalletConfig.class) content = content.replace("%holly_playerwpln%", "%hollywallet_wpln%")
+                    .replace("%iloscwpln%", "%topup_amount%");
                 config.load(content);
             }
             save(config, file.toPath());

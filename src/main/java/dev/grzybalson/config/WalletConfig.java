@@ -78,7 +78,7 @@ public class WalletConfig extends OkaeriConfig {
 
     public static class Broadcast extends OkaeriConfig {
         public String title = "&#FFF800&lᴅ&#FDF71C&lᴏ&#FBF638&lʟ&#FAF554&lᴀ&#F8F470&lᴅ&#F6F38C&lᴏ&#F8F470&lᴡ&#FAF554&lᴀ&#FBF638&lɴ&#FDF71C&lɪ&#FFF800&lᴇ";
-        public String subtitle = "&fɢʀᴀᴄᴢ %player% ᴅᴏʟᴀᴅᴏᴡᴀʟ %iloscwpln% &e☺ &#FFCF00&lɢ&#FFE400&lᴢ&#FFF800&l!&#FFE400&l! &e☺";
+        public String subtitle = "&fɢʀᴀᴄᴢ %player% ᴅᴏʟᴀᴅᴏᴡᴀʟ %topup_amount% &e☺ &#FFCF00&lɢ&#FFE400&lᴢ&#FFF800&l!&#FFE400&l! &e☺";
         public int fadeIn = 10;
         public int stay = 70;
         public int fadeOut = 20;
